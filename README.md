@@ -28,9 +28,9 @@ The naming scheme is as follows:
      
 ### Advanced Persistent Threats (APT's) 
 In the final lecture for this week the lecturer introduced and discussed advanced persistent threats (term originated from 2006 by the U.S. Air Force). In essence, an APT is a computer network attack from a person/group to gain unauthorized access to a network while remaining undetected for an extensive amount of time. Each word in the term also has its own definition pertaining to the threat and follows as such:
-    - Advanced: Operators behind the threat have a wide range of knowledge on the topic with the intelligence to develop unique attacks to gather necessary information.
-    - Persistent: Operators of the attack give priority to a specific task/attack rather than taking the opportunity for quick or small gains therefore implying that external entities are possibly at play. 
-    - Threat: This model is a threat as they have the capability and intetion of performing some type of harm to others. 
+- Advanced: Operators behind the threat have a wide range of knowledge on the topic with the intelligence to develop unique attacks to gather necessary information.
+- Persistent: Operators of the attack give priority to a specific task/attack rather than taking the opportunity for quick or small gains therefore implying that external entities are possibly at play. 
+- Threat: This model is a threat as they have the capability and intetion of performing some type of harm to others. 
     
 asdfs
 
