@@ -49,5 +49,18 @@ APT's also have similar aspects to most malware in terms of attackers/operators,
 Week 1 was a great introduction to malware with lectures provided by an individual within the industry who provided relevant and intriguing information to the students. The homework was a strong complement to the lecture materials as we were able to utilize malware analysis tools to a known malware attack which we were able to analyze with the tools provided in the dedicated virtual machines. As a result of the homework we were able to thoroughly analyze a form of malware and just how complex an attack can become and how hard they are to identify without the proper knowledge of malware or application of anti-virus software/tools. Overall, week 1 as stated was a smooth, effective introdction into malware and a great opportunity to play with malware analysis tools to increase our knowledge on how to properly dissect an infected system/machine. 
 
 
+## Week 2 Write-Up
+Week 2 introduced the topic of advanced forensics of systems/hosts presented by the director of threat intelligence at McAfee labs for a second week in a row. The lectures provided from our lecture were very interesting as well as relevant to today while showcasing useful techniques, tools, and industry standards that can be applied during our education a long with future career opportunities. The lectures this week also provided the opportunity of working with memory dumps/analysis including the challenge of scanning a usb device from a Korean defactor. 
+
+### An Overview of Forensics
+According to the lecture slides "Forensic Computing is the process of identifying, preserving, analyzing and presenting digital evidence in a manner that is legally acceptable”. (Rodney McKemmish 1999) Within the realm of computing forensics there are three areas of analyses known as live forensics, post-mortem based forensics (memory/disk), and network based forensics for data collection of cases. The process of forensics breaks down to evidence acquisition, investigation plus analyses, and reporting results while following four essential principles which are:
+1. Minimize data loss
+2. Record Everything
+3. Analyze all data collected (evidence)
+4. Report findings
+Following the defined investigation structure will allow for effective preparation, detection, response, strategies/tactics, and results for cases. During the investigation acquisition of data is crucial and can conist of virtual/physical main memory, drives or partitions, and any traffic over a network (intranet/internet). While collecting data (evidence) it is important to follow the guidelines of not interacting with a live system (alters the natural state of the evidence), powering down a system can destroy evidence, and when collecting evidence you should collect in the order of volatile to less volatile. 
+
+
+
 
 
