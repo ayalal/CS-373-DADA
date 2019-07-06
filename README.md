@@ -71,11 +71,28 @@ Following the defined investigation structure will allow for effective preparati
 - Physical Configuration & Network Topology 
 - Backups
 
+### Memory Dumps
+Dumping the contents of main memory (a.k.a. RAM) is critical for forensics analysis since a host of information is held within RAM during the running of processes or modules (running or exited). RAM can also contain hidden values utilized by the operator of the attack on the system or machine. Some information that can be detained from main memory is running processes, modules/DLL's, drivers, kits, open files, open registry keys, open network sockets, decrypted data, and so on. Having knowledge of operating systems can be very helpful when dealing with memory dumps as processes including files are broken in memory chunks both virtual and physical whose size are dependent on the host operating system. For example, the lecture slides stat that Windows allocates 4 GiB of virtual space for each running process on a host. In terms of physical memory, each process can be divided into mutliple 'pages' (dependent on size) across other address spaces. When handling dumps there are a few ways to enumerate through information which are:
+- Looking for a printable string 
+- Reconstruct internal data structures
+- Search for static signatures of kernel data structures
 
+While manual analyses is useful there are also some tools/plugins that can help with malware related to memory volatility which are:
+- malfind 
+- svcscan
+- ldrmodules
+- impscan 
+- apihooks 
+- idt 
+- gdt 
+- orphanthreads
+- callbacks
+- driverirp
+- psxview
+- ssdt_ex
+- ssdt_by_threads
 
-
-
-
+All of these tools can be helpful in detecting injected code, lists/headers related to processes, and kernel threads.  
 
 
 
