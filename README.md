@@ -78,21 +78,21 @@ Dumping the contents of main memory (a.k.a. RAM) is critical for forensics analy
 - Search for static signatures of kernel data structures
 
 While manual analyses is useful there are also some tools/plugins that can help with malware related to memory volatility which are:
-- malfind 
-- svcscan
-- ldrmodules
-- impscan 
-- apihooks 
-- idt 
-- gdt 
-- orphanthreads
-- callbacks
-- driverirp
-- psxview
+- malfind: discovers injected code and DLL's
+- svcscan: plugin that lists out running services
+- ldrmodules: plugin that will look for hidden DLL's
+- impscan: identifies calls to APIs without parsing a PE's IAT 
+- apihooks: finds API hooks in user mode or kernel mode 
+- idt: prints the systems interrupt descriptor table 
+- gdt: prints the systems global descriptor table 
+- orphanthreads:
+- callbacks: print an assortment of important notification routines and kernel callbacks
+- driverirp: print a driver's IRP (Major Function) table
+- psxview: helps you detect hidden processes by comparing what PsActiveProcessHead contains with what is reported by various other sources of process listings.
 - ssdt_ex
 - ssdt_by_threads
 
-All of these tools can be helpful in detecting injected code, lists/headers related to processes, and kernel threads.  
+ For more information on the plugins please follow this link https://github.com/volatilityfoundation/volatility/wiki/Command-Reference-Mal for the github repo for the code as well as wiki to learn more about these tools. 
 
 
 
