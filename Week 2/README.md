@@ -10,7 +10,7 @@ According to the lecture slides "Forensic Computing is the process of identifyin
 
 Following the defined investigation structure (structure image below) will allow for effective preparation, detection, response, strategies/tactics, and results for cases. During the investigation acquisition of data is crucial and can conist of virtual/physical main memory, drives or partitions, and any traffic over a network (intranet/internet). While collecting data (evidence) it is important to follow the guidelines of not interacting with a live system (alters the natural state of the evidence), powering down a system can destroy evidence, and when collecting evidence you should collect in the order of volatile to less volatile. 
 
-<img src="ResponseStructure.png" alt="hi1" class="inline"/>
+<img src="ResponseStructure.png" alt="" class="inline"/>
 
 ### Memory Volatility Scale in a Typical System (Top to Bottom = Most Volatile to Least Volatile)
 - System Memory
@@ -43,7 +43,9 @@ While manual analyses is useful there are also some tools/plugins that can help 
 - ssdt_ex
 - ssdt_by_threads
 
- For more information on the plugins please follow this link https://github.com/volatilityfoundation/volatility/wiki/Command-Reference-Mal for the github repo for the code as well as wiki to learn more about these tools. 
+ For more information on the plugins please follow this link https://github.com/volatilityfoundation/volatility/wiki/Command-Reference-Mal for the github repo for the code as well as wiki to learn more about these tools. However, should you find yourself manually testing through the command line you can look at the listing below provided by our lecturer on useful windows commands for live response/analyses when obtaining evidence. 
+ 
+ <img src="WindowsMemCommands.png" alt="" class="inline"/>
 
 ### More Than Just a Technical Battle
 One of the major learning pieces I took from this lecture was that security and malware is more than just technical details. During the presentaions the lecturer provided discussion points through real life examples where he or others he has known had to handle evidence in cases such as child trafficking along with other imagery that could mentally disturb analysts. The lecturer discussed how a number of known colleagues had moved on or retired from the industry due to the severe cases dealt with and the mental fatigue that occurred due to dealing with such extreme situations/evidence. I think discussing the human psychological aspect of a security/malware career was a great move by the instructor because it is easy to get lost in the technical details of a field therefore we should make sure to note the other aspects of a career that present themselves. From a students perspective I found this information invaluable as we can move on in our college education with the added perspective that despite being in such a technical field there are other factors to be aware of that can affect us on a mental/emotional level and we should make sure to tend to all aspects of our life. 
