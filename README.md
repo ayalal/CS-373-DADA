@@ -94,5 +94,8 @@ While manual analyses is useful there are also some tools/plugins that can help 
 
  For more information on the plugins please follow this link https://github.com/volatilityfoundation/volatility/wiki/Command-Reference-Mal for the github repo for the code as well as wiki to learn more about these tools. 
 
+### More Than Just a Technical Battle
+One of the major learning pieces I took from this lecture was that security and malware is more than just technical details. During the presentaions the lecturer provided discussion points through real life examples where he or others he has known had to handle evidence in cases such as child trafficking along with other imagery that could mentally disturb analysts. The lecturer discussed how a number of known colleagues had moved on or retired from the industry due to the severe cases dealt with and the mental fatigue that occurred due to dealing with such extreme situations/evidence. I think discussing the human psychological aspect of a security/malware career was a great move by the instructor because it is easy to get lost in the technical details of a field therefore we should make sure to note the other aspects of a career that present themselves. From a students perspective I found this information invaluable as we can move on in our college education with the added perspective that despite being in such a technical field there are other factors to be aware of that can affect us on a mental/emotional level and we should make sure to tend to all aspects of our life. 
+
 
 
