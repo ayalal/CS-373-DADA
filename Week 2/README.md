@@ -10,7 +10,7 @@ According to the lecture slides "Forensic Computing is the process of identifyin
 
 Following the defined investigation structure (structure image below) will allow for effective preparation, detection, response, strategies/tactics, and results for cases. During the investigation acquisition of data is crucial and can conist of virtual/physical main memory, drives or partitions, and any traffic over a network (intranet/internet). While collecting data (evidence) it is important to follow the guidelines of not interacting with a live system (alters the natural state of the evidence), powering down a system can destroy evidence, and when collecting evidence you should collect in the order of volatile to less volatile. 
 
-<img src="ResponseStructure.PNG" alt="hi1" class="inline"/>
+<img src="ResponseStructure.png" alt="hi1" class="inline"/>
 
 ### Memory Volatility Scale in a Typical System (Top to Bottom = Most Volatile to Least Volatile)
 - System Memory
