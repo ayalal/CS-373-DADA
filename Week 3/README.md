@@ -47,7 +47,9 @@ Malware Hash: 068D5B62254DC582F3697847C16710B7
 
 With encrpytion becoming a popular approach to hiding the static/dynamic contents of a malicious file, security analysts jobs have become much more difficult due the added approach of decrypting those files. However, shoulder an attacker take a lazy approach to malware such as the file hash analyzed for this article a simple analysis can be conducted to search and understand the behavior of malware being deployed. Users should also educate themselves in the best practices to follow when utilizing sources from unkown providers otherwise they could be harmed by the trojan analyzed for this blog. 
 
-#### String Analysis
+#### String Search/Analysis
+Starting off the analysis was a simple string search in the file to see what strings were present and could be possible links to malware. Within FileInsight I opened up the file and searched through the file to find uncommon strings that could possibly suggest malware presence/behavior. After processing in FileInsight a number of uncommon strings were found and consisted of "wm.ime","QQLogin.exe","GetTuPian.asp", "DNF.exe", “RegSetValue”, "RegOpenKeyExA", "RegCloseKey", "Keyboard" along with various other suspiciously named strings. 
+
 
 
 
