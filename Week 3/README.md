@@ -50,7 +50,7 @@ With encrpytion becoming a popular approach to hiding the static/dynamic content
 #### String Search/Analysis
 Starting off the analysis was a simple string search in the file to see what strings were present and could be possible links to malware. Within FileInsight I opened up the file and searched through the file to find uncommon strings that could possibly suggest malware presence/behavior. After processing in FileInsight a number of uncommon strings were found and consisted of "wm.ime","QQLogin.exe","GetTuPian.asp", "DNF.exe", “RegSetValue”, "RegOpenKeyExA", "RegCloseKey", "Keyboard" along with various other suspiciously named strings. 
 
-
+ <img src="MalwareStrings.png" alt="" class="inline"/>
 
 
 
