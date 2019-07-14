@@ -40,7 +40,7 @@ Cuckoo is an automated malware analyses tool that can be used to determine the b
 
  <img src="CuckooResults.png" alt="" class="inline"/>
 
-## Blog- Trojan Stealing User Sensitive Data On Infected Machines
+## Blog- Chinese Keylogger Stealing User Sensitive Data On Infected Machines
 Author: Lorenzo Ayala
 Sunday, July 14, 2019
 Malware Hash: 068D5B62254DC582F3697847C16710B7
@@ -52,5 +52,22 @@ Starting off the analysis was a simple string search in the file to see what str
 
  <img src="MalwareStrings.png" alt="" class="inline"/>
 
+#### Malware Behavior Analysis & YARA Signature
+With the known found strings it was a quick guess that the malware was most likely (if installed) setting registry values related to a machines keyboard to create a keylogger. When setting up an environment with Cuckoo and FakeNet I ran the file wm.ime to allow analyses of the malware. On completion and look at the Cuckoo logs the wm.ime file would read two other files, add a registry key with value E0200804, add the new key to the keyboard layouy preload key directory, and then install a batch file to the system. After completing its set up the malware would then set up an http connection to 'http://%s:8080/pobao/GetTuPian.asp' which is most likely an attackers server to store the logs from the keylogger on the host machine. Based on the analysis I then set up the following YARA signature to determine if a machine has been infected with the malware:
 
+```
+rule KeyLog{
+      Strings:
+               $a = "wm.ime"
+               $b = "QQLogin.exe"
+               $c = "GetTuPian.asp"
+               $d = "DNF.exe"
+               $e = "RegSetValue"
+               $f = "Keyboard"
+      Condition:
+               all of them
+}
+```
+
+should a match happen on your system then you can then delete the "wm.ime" file from your system and delete all keys with the value E0200804. 
 
