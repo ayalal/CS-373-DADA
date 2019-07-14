@@ -20,6 +20,20 @@ Due to the dangers and constant rise of malware there have been a number of popu
 
  <img src="PracticesDiagram.png" alt="" class="inline"/>
 
+### YARA & Lab
+YARA is a tool aimed at helping malware researchers to identify and classify malware samples. With YARA you can create descriptions of malware families based on textual or binary patterns. Each description, otherwise known as rules, consists of a set of strings and a boolean expression which determine its logic. Within a rule set strings can be set by nocase (case insensitive), wide (strips zero in unicode), wide ascii (searches wide and ascii strings), fullword (full delimited strings), byte patterns (hexadecimal strings), and wild cards which are "?" or "??" syntactically. Within YARA there is a rule browser and generator, code editor to develop rules, malware browser, and an inspector to gather information on samples. 
+
+The YARA lab consisted of utilizing the environment provided by YARA to evaluate a group of files and find uncommon strings being found between files so that we can classify files into various categories or families. The lab contain three groups of files to search for strings and were located in the following directories:
+
+- C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 1
+- C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 2
+- C:\Users\Admin\Desktop\malware\Malware Defense\Class1\Sample Group 3
+
+Within the YARA editor you can select these directories and generate rules in the code editor provided in the YARA environment. After further string matching and rule generation you can continuously execute rules to see how many matches have occurred with your created rules for those specific files. Below is my sample from the lab for group 1 showing a rule that matches across all files. 
+
+ <img src="YaraEditor.png" alt="" class="inline"/>
+
+
 
 
 
