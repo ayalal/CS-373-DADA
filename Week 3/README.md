@@ -40,7 +40,7 @@ Cuckoo is an automated malware analyses tool that can be used to determine the b
 
  <img src="CuckooResults.png" alt="" class="inline"/>
 
-## Blog- Chinese Keylogger Stealing User Sensitive Data On Infected Machines
+## Blog - Chinese Keylogger Stealing User Sensitive Data On Infected Machines -
 Author: Lorenzo Ayala
 Sunday, July 14, 2019
 Malware Hash: 068D5B62254DC582F3697847C16710B7
