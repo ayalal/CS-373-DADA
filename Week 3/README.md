@@ -36,7 +36,9 @@ Within the YARA editor you can select these directories and generate rules in th
 After successful matching those can then be classified into any form that is necessary or hase been set by policy. The same procedure can be used for sample groups two and three for string analyses which each have their own unique strings to discover and categorize but for length I will keep my first sample up since they are quite similar in terms of the process. 
 
 ### Cuckoo 
-Cuckoo is an automated malware analyses tool that can be used to determine the behavior of malware without harming an actual host. Cuckoo achieves its usage by providing a sandbox to isolate a realistic environment to process the behavior of some chosen malware file. Should you not use the provided sandbox Cuckoo can still be used within a set environment to analyze the behavior of malware. Cuckoo can also provide other uses to security specialists such as tracing API calls/behavior of files, dump and analyze network traffic (even if it is decrypted), and perform advanced memory analysis of the infected virtual sandbox system through volatility as wel as on a process memory granularity with YARA. 
+Cuckoo is an automated malware analyses tool that can be used to determine the behavior of malware without harming an actual host. Cuckoo achieves its usage by providing a sandbox to isolate a realistic environment to process the behavior of some chosen malware file. Should you not use the provided sandbox Cuckoo can still be used within a set environment to analyze the behavior of malware. Cuckoo can also provide other uses to security specialists such as tracing API calls/behavior of files, dump and analyze network traffic (even if it is decrypted), and perform advanced memory analysis of the infected virtual sandbox system through volatility as well as on a process memory granularity with YARA. When Cuckoo completes analysis of the malware it will provide logs in the form of csv files which provide a flow of events that occurred during the malware process (image of results below). 
+
+ <img src="CuckooResults.png" alt="" class="inline"/>
 
 
 
