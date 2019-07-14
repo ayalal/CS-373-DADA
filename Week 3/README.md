@@ -20,7 +20,7 @@ Due to the dangers and constant rise of malware there have been a number of popu
 
  <img src="PracticesDiagram.png" alt="" class="inline"/>
 
-### YARA & Lab
+### YARA & YARA Lab
 YARA is a tool aimed at helping malware researchers to identify and classify malware samples. With YARA you can create descriptions of malware families based on textual or binary patterns. Each description, otherwise known as rules, consists of a set of strings and a boolean expression which determine its logic. Within a rule set strings can be set by nocase (case insensitive), wide (strips zero in unicode), wide ascii (searches wide and ascii strings), fullword (full delimited strings), byte patterns (hexadecimal strings), and wild cards which are "?" or "??" syntactically. Within YARA there is a rule browser and generator, code editor to develop rules, malware browser, and an inspector to gather information on samples. 
 
 The YARA lab consisted of utilizing the environment provided by YARA to evaluate a group of files and find uncommon strings being found between files so that we can classify files into various categories or families. The lab contain three groups of files to search for strings and were located in the following directories:
@@ -32,6 +32,12 @@ The YARA lab consisted of utilizing the environment provided by YARA to evaluate
 Within the YARA editor you can select these directories and generate rules in the code editor provided in the YARA environment. After further string matching and rule generation you can continuously execute rules to see how many matches have occurred with your created rules for those specific files. Below is my sample from the lab for group 1 showing a rule that matches across all files. 
 
  <img src="YaraEditor.png" alt="" class="inline"/>
+
+After successful matching those can then be classified into any form that is necessary or hase been set by policy. The same procedure can be used for sample groups two and three for string analyses which each have their own unique strings to discover and categorize but for length I will keep my first sample up since they are quite similar in terms of the process. 
+
+### Cuckoo 
+Cuckoo is an automated malware analyses tool that can be used to determine the behavior of malware without harming an actual host. Cuckoo achieves its usage by providing a sandbox to isolate a realistic environment to process the behavior of some chosen malware file. Should you not use the provided sandbox Cuckoo can still be used within a set environment to analyze the behavior of malware. Cuckoo can also provide other uses to security specialists such as tracing API calls/behavior of files, dump and analyze network traffic (even if it is decrypted), and perform advanced memory analysis of the infected virtual sandbox system through volatility as wel as on a process memory granularity with YARA. 
+
 
 
 
