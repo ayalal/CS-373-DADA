@@ -4,5 +4,5 @@ Week 3 provided an introduction of malware defense presented by Craig Schmugar a
 ### Malware Procedure 
 Starting off the presentation was the overview of the steps malware takes to infect a desired host and/or system. Understanding the procedure is a building block in defense as providing the best defensive practices requires having knowledge on both sides of the playing field. General malware behavior steps are depicted in the diagram seen below (provided by Craig Schmugar):
 
- <img src="MalwareBehavior.png" alt="" class="inline"/>
+ <img src="MalwareProcedure.png" alt="" class="inline"/>
 
