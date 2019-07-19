@@ -25,4 +25,4 @@ Following the simple layout of concepts was the introduction of WinDBG (pronounc
 
 
 ### Understanding at a Lower Level
-
+Getting introduced to WinDBG provided us the knowledge that analyses of broken/crashed systems occurs at a very low level of the system most commonly assembly language correlating to a specific application or system. 
