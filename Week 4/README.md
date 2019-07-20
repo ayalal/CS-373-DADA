@@ -20,7 +20,12 @@ Following the simple layout of concepts was the introduction of WinDBG (pronounc
 - Thread: !teb 
 
 
-### WinDBG Lab
+### WinDBG Labs
+The labs for WinDBG were a fantastic way to get introduced to the debugging system and its GUi as well as its command line instructions. The lab involving IE processes was particularly intriguing as it provided the opportunity to take the new found knowledge and apply it to an issue that occurs on an online application that has crashed when we set a breakpoint and execute to that point:
+
+<img src="WinDBGLab.png" alt="" class="inline"/>
+
+Upon crashing I then realized that the program was using heap data at this particular assembly operand and therefore used the command ```!heap -p -a ``` with necessary arguments to filter out what data was being transacted on the heap (ex. function arguments) and the allocation sizes so that we can inject the necessary malware to manipulate system behavior through our Javascript code. After learning of the heap allocation we can then use Brad's provided Javascript file to alter the block of memory with the replacement block variable in the Javascript to alter the heap so that on execution we could pop the calculator through the shell program.
 
 
 ### Understanding at a Lower Level
@@ -36,6 +41,21 @@ Messing around with WinDBG for analysis provided us the opportunity to discuss a
 - Storage Flaw: An issue in protecting system storage or not properly storing data such as sending plain text for storage. 
 - Input Validation: Flaws where a malicious input can gain access to a system or corrupt it. (ex. injections)
 
-Noting these families will be good for reference in the future for how we should handle each flaw we come by or that pop up during development while providing us a place to start in what may have caused such a flaw and where the flaw is within the system. 
+Noting these families will be good for reference in the future for how we should handle each flaw we come by or that pop up during development while providing us a place to start in what may have caused such a flaw and where the flaw is within the system. Should a flaw be evident in a system we can then gain access to the memory of an application. Should an attacker gain access to memory they can then attack via a stack or heap overflow. A stack overflow occurs if the call stack pointer exceeds the stack bound which is usually determined by address space when a program is executed. Overflowing the stack will allow the attacker to insert assembly instructions or manipulate current instructions so that in response malware can be executed unexpectedly on the machines end. Most common attacks usually occur where attackers gain access to the memory then overtak the stack pointer so that it will then point to an address where their malicious code is located. A heap overflow is a buffer overflow that occurs in the heap data area which is dynamically allocated by a program. Should an attacker gain access to the heap if they can achieve access to an object or internal structure they can then begin to manipulate the program through data corruption. Brad introduced the tool "Page Heap" for WinDBG which was designed for heap analysis/debugging which is enable through gflags to free allocated memory (example code below) and then examine the current state of heap information. 
 
+#### Page Heap Memory Free
+```
+0:005> !heap -p -a ecx
+address 17beaff8 found in
+_DPH_HEAP_ROOT @ 17801000
+in free-edallocation (  DPH_HEAP_BLOCK: VirtAddrVirtSize)
+                           17804068 : 17beaff8 2000
+70a190b2 verifier!AVrfDebugPageHeapFree+0x000000c2
+772165f4 ntdll!RtlDebugFreeHeap+0x0000002f
+771da0aa ntdll!RtlpFreeHeap+0x0000005d
+771a65a6 ntdll!RtlFreeHeap+0x00000142
+757bbbe4 kernel32!HeapFree+0x00000014
+```
+### Week 4 Conclusion
+Week 4 provided a great median stand point of analysis for malware. Handling various flaws allows us to analyze the issues from a defensive perspective to understand what is happening while understanding the flaws allows us to consider what style of attacks can occur when developing an application or system for production use. The labs were a great introduction to tools that are useful in debugging Windows operating system application while providing us the opportunity in examining flaws which give a learning that will be useful heading into our careers.  
 
