@@ -23,11 +23,19 @@ Following the simple layout of concepts was the introduction of WinDBG (pronounc
 ### WinDBG Lab
 
 
-
 ### Understanding at a Lower Level
 Getting introduced to WinDBG provided us the knowledge that analyses of broken/crashed systems occurs at a very low level of the system most commonly assembly language correlating to a specific application or system. During lecture a brief period was used to provide an overlook into the construction of assembly which is based upon code functionality and how the construction of assembly can become a weak point within an application. Furthermore based on each function a stack frame is produced for each function along with its argument data necessary for process including the return address which is required to jump back to the programs starting point if a function is called. Knowledge of how a stack frame is constructed is vital in knowing how to manipulate a program through malware such as payloads via javascript or just for analysis with WinDBG for deconstruction on a lower level (in image below). Having a look at how assembly construction occurs is a good way to really bring in the entire picture that as we develop applications or systems we should be aware of the lower level of construction that occurs and how a machine interprets that assembly for execution. 
 
  <img src="MemoryAnalysis.png" alt="" class="inline"/>
 
+### Flaws and Overflows
+Messing around with WinDBG for analysis provided us the opportunity to discuss and look at flaws that are apparent today and overflows (stack & heap) that are utilized to gain control of a program through said flaws. Common flaws consisted of the following families by which they are categorized into:
+
+- Configuration Flaw: inproper setup of some application, service, or system such as a weak password.
+- Logic Flaw: A design flaw of some system that can be manipulated like soft authentication.
+- Storage Flaw: An issue in protecting system storage or not properly storing data such as sending plain text for storage. 
+- Input Validation: Flaws where a malicious input can gain access to a system or corrupt it. (ex. injections)
+
+Noting these families will be good for reference in the future for how we should handle each flaw we come by or that pop up during development while providing us a place to start in what may have caused such a flaw and where the flaw is within the system. 
 
 
