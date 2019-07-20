@@ -25,4 +25,9 @@ Following the simple layout of concepts was the introduction of WinDBG (pronounc
 
 
 ### Understanding at a Lower Level
-Getting introduced to WinDBG provided us the knowledge that analyses of broken/crashed systems occurs at a very low level of the system most commonly assembly language correlating to a specific application or system. 
+Getting introduced to WinDBG provided us the knowledge that analyses of broken/crashed systems occurs at a very low level of the system most commonly assembly language correlating to a specific application or system. During lecture a brief period was used to provide an overlook into the construction of assembly which is based upon code functionality and how the construction of assembly can become a weak point within an application. Furthermore based on each function a stack frame is produced for each function along with its argument data necessary for process including the return address which is required to jump back to the programs starting point if a function is called. Knowledge of how a stack frame is constructed is vital in knowing how to manipulate a program through malware such as payloads via javascript or just for analysis with WinDBG for deconstruction on a lower level (in image below). Having a look at how assembly construction occurs is a good way to really bring in the entire picture that as we develop applications or systems we should be aware of the lower level of construction that occurs and how a machine interprets that assembly for execution. 
+
+ <img src="MemoryAnalysis.png" alt="" class="inline"/>
+
+
+
