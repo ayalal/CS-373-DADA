@@ -19,5 +19,7 @@ A thread is the basic unit to which the operating system allocates processor tim
 <img src="Thread.png" alt="" class="inline"/>
 
 
+### System Boot Process and Processes in Windows
+The system boot process within an operating system in initialized at pre-boot by which begins diagnostics on memory of a system as well as other hardware components necessary for functionality. The BIOS is then loaded which will locate and execute the Master Boot Record in the machines boot device. On execution the Master Boot Record locates the active partition storing the boot sector for execution so that the boot selector loads NTLDR from the disk to load the operating system and continue initialization. Regular processes within Windows are implemented as objects which if executable can contain one or more threads (one thread is needed for execution). A process also includes an object table that has handles to other objects known to this process (image below provided by Aditya Kapoor). 
 
-
+<img src="Process.png" alt="" class="inline"/>
