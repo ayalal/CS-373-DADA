@@ -8,7 +8,6 @@ The first discussion point of the lecture was the importance of network security
 ### Robustness Principle Analysis
 
 ### Network-Based Protection Strategies
-The following are common and useful network protection strategies implemented in todays industry. 
 
 #### Positive Policy 
 Positive policy is utilized to set whitelists of expected/allowed behaviors from hosts or files therefore allowing the network or admin to identify suspiciou activity a long with setting permissions. The fundamental concept then provides the network defender the advantage by utilizing internal conventions/policies on certain machines which in return reduce the range of attack choices of the network attacker. Positive policity can also allow introduce hooks for trust mechanisms such as identity or trust chaining and also provide detection mechanisms based on provided policies as well as whitelisted material. One drawback of just using positive policy is that it can not name a threat that has been passed in but just detect that some anomaly has happened.
@@ -33,6 +32,11 @@ Quarantine is essentially placing the malware within a space or limit (enter sen
 #### Reputation 
 Reputation evalutaion is a big data solution/implementation in network security as reputation can rely on a large set of data such as IP addresses associated with known malware developers, botnets, or spammers as well as URL classification and categorization with references to pages known to hold scripting attacks, drive-by downloads, and so on. File reputation is also important to recognize the legitimate nature of the source providing the file or if a specific file is know to carry common viruses or are included with virus implementation. 
 
+### Network Products
+Many of the previously discussed network security implementations have been deviced in to products that are used world wide from software companies that have developed technologies that incorporate numerous functionalities for effective network security. Going over the various functionalities present in each product was a nice reflection on the current state of modern network security and having previously been a information security intern I have witnessed first hand the implementation of the products and which are more commonly used due to their wide array of functionality. While there are some more common network products each network should be evaluated on what technologies should be incorporated based on use cases to ensure that strong security layers are provided. 
 
+### Network Security Threats 
 
+#### Man in the Middle Attack (MITM)
+A man in the middle attack  
 
