@@ -61,6 +61,18 @@ Reconnaissance can be either active by which the attacker wants to attack vulner
 
 <img src="Wireshark.png" alt="" class="inline"/>
 
+In order to protect yourself from reconnaissance you should implement policies and deep inspection while possibly using honeynets to slow down the opposition. One exception is passive reconnaissance which can be difficult to protect a network from unless an admin utilized physical security or cryptography practices. 
+
+#### Threat: Spoofing 
+In the context of network security, a spoofing attack is a situation in which a person or program successfully masquerades as another by falsifying data, to gain an illegitimate advantage. Spoofing can consist of LAND attacks which is a DoS attack that is relient on spoofing. IP and ARP spoofing can be used for MITM attacks as ARP caches can be poisoned via this method. Predictive spoofing attacks handles TCP resets and TCP sequence number prediction to get through NAT's. 
+
+Defense against spoofing can consist of simple checks across the network for detection and protection. Another form of spoof protection is reverse path filtering which protects against spoofed source addresses by causing the system to discard packets with source addresses that have no route or a route that does not point towards the originating interface.
+
+
+#### Threat: Resource Consumption Attacks
+
+
+
 
 
 
