@@ -5,9 +5,8 @@ Week six was about network security and the numerous security implementations a 
 The first discussion point of the lecture was the importance of network security and its uses in today's industry. The key aspect is to help host-based protections by using the network as a safe zone by preventing dangerous hosts or data from entering any unauthorized areas which can help prevent exfiltration of critical data. Network security is also vital in preventing threats coming from and out on the networks which can consist of DDoS (distributed denial of service), attacks from network (ex. stack overflow, Morris Worm), Worms, Botnets, theft of network resources, and threat to critical infrastructure, espionage. With such a wide array of possible attacks it is easy to grasp as to why network security is such a strong implementation of many corporate infrastructures. 
 
 ### Robustness Principle Analysis
-
-<span style="color:green">some green text</span>
-<font color='red'>test blue color font</font>
+<img src="RobustnessOne.png" alt="" class="inline"/>
+<img src="RobustnessTwo.png" alt="" class="inline"/>
 
 ### Network-Based Protection Strategies
 
