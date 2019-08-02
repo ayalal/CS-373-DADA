@@ -46,7 +46,7 @@ Helpfule uses of MITM consist of creating a terminating TCP proxy, HTTP proxy, m
 #### Detecting Man in the Middle
 One of the main defenses and detection methods with MITM is to use an HMAC (a specific type of message authentication code involving a cryptographic hash function and a secret cryptographic key.) such as a cryptographic hash or pseudo random function so that you can detect a MITM as the hashed packet will have altercations on it that are noticeable. Should a HMAC be utilized it is useful to address the 'N' squared issue which can be avoided by using a shared secret which implements a public key to lock packet data and a users own private key to unlock the encrypted data.
 
-### TLS/SSL 
+#### TLS/SSL 
   Securing communications across a network can be quite difficult but with TLS/SSL (since TLS is now deprecated SSL will be referenced) there is a strong go-to implementation that has been utilized by millions, however, SSL is not perfect and should not be the only solution to creating security on your network as SSL MITM can be used to fool clients. Some guarantees that come with the use of SSL are (image provided by Ram Venugopalan and Geoffrey Cooper of McAfee Security):
 
 <img src="SSL.png" alt="" class="inline"/>
@@ -70,7 +70,45 @@ Defense against spoofing can consist of simple checks across the network for det
 
 
 #### Threat: Resource Consumption Attacks
+Probably the most common resource consumption attack is a DoS (denial of service) or DDoS (distributed denial of service) attacks. A DoS attack is about consuming resources for an extended period of time such that the targeted service is degraded, some times to a point where it is unusable while a DDoS attack (harder to defend against) leverages large numbers of computers to perform one or more resource exhaustion attacks against a target such that it is overwhelmed and unable to perform its function. Specific DoS attacks consist of network exhaustion which floods the network to prevent services, CPU exhaustion such that traffic can not be served as intended, memory exhaustion which forces a machine to run out of memory resulting a slow down or crash, storage exhaustion to take all disk space on the target machine, application exploitation to eliminate the services of an application, and other finite resource exhaustion. Defending DoS and DDoS attacks consist of strategies where you should perform validation of network traffic, cleanse network products, and traffic scrubbing centers. 
 
+
+#### Threat: Bugs and Back Doors
+Bugs are unintentional vulnerabilities while back doors are intentional and therefore testing of network security is must a long with other network implementations to prevent simple exploitations. Some common bugs consist of built-in/default passwords on hardware, susceptibility to nasty packets, protocol design bugs, and buffer overflow.
+
+### Defense The Basics
+
+#### Packet Filtering
+Packet filtering is a basic first step in network security and is a policy driven method to allow only expected traffic to cross a defined network boundary. Filtering typically uses layer 3 and 4 properties of packets (ports plus addresses) for validation in order to protect against segmentation attacks, fragmentation attacks, malformed packets, and streams. 
+
+#### Deep Inspection
+Deep inspection is another form of network defense that adds the inspection of the data portion of the packet in addition to the network headers available. 
+–Trace protocol headers
+–Multiple protocols (modern firewalls recognize the protocols dynamically)
+–Signature processing on content (IPS)
+–Dictionary processing on content (“Data Loss Protection”)
+
+
+#### Proxying 
+As discussed in MITM proxies can help with basic limitation of packet filtering. Proxies can also provide services that renew TCP connections to prevent MITM attacks as well as inspect/modify application data to prevent similar attacks. They also provide nuanced and granular access control based on application specific information, however, it should be noted that proxies have lower performance than basic packet filtering. 
+
+#### NAT (Network Address Translation)
+NAT is a useful defense as it temporarily maps a connection from a local private IP and port to a public IP address and port to be used on the public side of that communication. Due to the style of NAT it makes it harder for an attacker to learn a networks architecture by hiding local IP addresses while also mitigating the low availability of addresses in IPv4. While NAT is useful it still is vulnerable with methods that can be used to get passed its methods. 
+
+#### IPSec/VPN
+IPSec is a security layer at Layer 3 (IP level).  IPSec allows IP packets to be encrypted between two endpoints under a Security Association (SA).  When you construct a network out of IPSec tunnels, it is called a Virtual Private Network (VPN). IPSec uses the Authentication Header (AH) between the IP header and the payload resulting in IPSec being commonly deployed in tunnel mode (in tunnel mode, the entire IP packet is encrypted and authenticated. It is then encapsulated into a new IP packet with a new IP header) which can allow the connection between a machine and a network over the internet. 
+
+
+#### Network Intrusion Prevention System (NIPS)
+A network intrusion prevention system is a network security/threat prevention technology that examines network traffic flows to detect and prevent vulnerability exploits. Vulnerability exploits usually come in the form of malicious inputs to a target application or service that attackers use to interrupt and gain control of an application or machine. Following a successful exploit, the attacker can disable the target application (resulting in a denial-of-service state), or can potentially access to all the rights and permissions available to the compromised application. NIPS commonly sit directly behind the firewall and provides a complementary layer of analysis that negatively selects for dangerous content. 
+
+
+### Looking Forward
+Despite the constant battle that is network security the development for future technologies is constantly underway to develop secure network applications/products which are now using intelligence between end points as a key aspect in developing security. knowledge of advance evasion techniques (AET's) has risen as well, however, they are not as complex as they sound since most AET's tend to be a combination of common network evasion techniques but do provide a more in depth inspection of how one's network handles mutliple protocols/information resulting in the finding of vulnerabilities. One of the biggest developments in network security is software defined networks (SDN's) which approaches networks to enable dynamic, programatically efficient network configurations to improve performance as well as network monitoring. 
+
+
+### Week 6 Conclusion
+Week 6 was really enjoyable for me as I develop numerous applications for networks during my internships at Cambia Health Solutions and at A-dec so this week provided a strong refresh on this topic as well as some more advancements in network security. 
 
 
 
