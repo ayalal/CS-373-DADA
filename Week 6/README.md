@@ -36,7 +36,7 @@ Many of the previously discussed network security implementations have been devi
 
 ### Network Security Threats 
 
-#### Man in the Middle Attack (MITM)
+#### Threat: Man in the Middle Attack (MITM)
 A man in the middle attack relates to the situation where a machine ("man") is between a network connection of two end points and is altering or reading the packets being sent by the end points to either gain information/access as well as even harm one of the end point users/machines. One unique attribute of the MITM threat is that it can be implemented for both good and bad use cases which are dependent on the approach taken by the opposer. 
 
 In terms of harmful uses, MITM is commonly used for ARP (address resolution protocol) poisoning in which a malicious actor sends falsified ARP (Address Resolution Protocol) messages over a local area network. This results in the linking of an attacker’s MAC address with the IP address of a legitimate computer or server on the network. Once the attacker’s MAC address is connected to an authentic IP address, the attacker will begin receiving any data that is intended for that IP address. ARP spoofing can enable malicious parties to intercept, modify or even stop data in-transit. A second MITM threat that can occur is a TCP hijacking. A TCP hijack is an attack that spoofs a server into thinking it is talking with a valid client, when in fact it is communicating with an attacker that has taken over (or hijacked) the TCP session. In essence, a TCP hijack is a MITM attack with two phases as the attacker will first render the client useless in its connection with the server. After the client has been dealt with the attacker can then utilize the session to mimic themselves as the now dead client to gain access to the server with whatever use case or priveleges that was provided to the client. 
@@ -47,5 +47,7 @@ Helpfule uses of MITM consist of creating a terminating TCP proxy, HTTP proxy, m
 One of the main defenses and detection methods with MITM is to use an HMAC (a specific type of message authentication code involving a cryptographic hash function and a secret cryptographic key.) such as a cryptographic hash or pseudo random function so that you can detect a MITM as the hashed packet will have altercations on it that are noticeable. Should a HMAC be utilized it is useful to address the 'N' squared issue which can be avoided by using a shared secret which implements a public key to lock packet data and a users own private key to unlock the encrypted data.
 
 ### TLS/SSL 
-Securing communications across a network can be quite difficult but with TLS/SSL (since TLS is now deprecated SSL will be referenced) there is a strong go-to implementation that has been utilized by millions, however, SSL is not perfect and should not be the only solution to creating security on your network as SSL MITM can be used to fool clients. Some guarantees that come with the use of SSL 
+Securing communications across a network can be quite difficult but with TLS/SSL (since TLS is now deprecated SSL will be referenced) there is a strong go-to implementation that has been utilized by millions, however, SSL is not perfect and should not be the only solution to creating security on your network as SSL MITM can be used to fool clients. Some guarantees that come with the use of SSL are:
+
+<img src="SSL.png" alt="" class="inline"/>
 
