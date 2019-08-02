@@ -51,7 +51,10 @@ Securing communications across a network can be quite difficult but with TLS/SSL
 
 <img src="SSL.png" alt="" class="inline"/>
 
-While SSL provides a good stock option for network security it does have its vulnerabilities with one of the most famous cases coming to the surface in April 2014 known as the 'Heartbleed' vulnerability. 
+While SSL provides a good stock option for network security it does have its vulnerabilities with one of the most famous cases coming to the surface in April 2014 known as the 'Heartbleed' vulnerability. The biggest lesson learned from 'Heartbleed' was the separation of data to mitigate risks which was uncommon as it can be an expensive option. 
+
+#### Threat: Hidden Data Transmissions 
+Hidden data across the network can occur from a number of sources which can range from simple misuse of tools to actual malicious behavior. One form of hidden data transmissions is a covert channel which is hidden from traditional network devices by working around implemented network policies or limitations. Covert channels can tunnel through secure operating systems and require special measures to control. Covert channel analysis is the only proven way to control covert channels. Another type of hidden transmission is legitimate channel misuse.  
 
 
 
