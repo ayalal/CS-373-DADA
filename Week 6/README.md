@@ -47,7 +47,14 @@ Helpfule uses of MITM consist of creating a terminating TCP proxy, HTTP proxy, m
 One of the main defenses and detection methods with MITM is to use an HMAC (a specific type of message authentication code involving a cryptographic hash function and a secret cryptographic key.) such as a cryptographic hash or pseudo random function so that you can detect a MITM as the hashed packet will have altercations on it that are noticeable. Should a HMAC be utilized it is useful to address the 'N' squared issue which can be avoided by using a shared secret which implements a public key to lock packet data and a users own private key to unlock the encrypted data.
 
 ### TLS/SSL 
-Securing communications across a network can be quite difficult but with TLS/SSL (since TLS is now deprecated SSL will be referenced) there is a strong go-to implementation that has been utilized by millions, however, SSL is not perfect and should not be the only solution to creating security on your network as SSL MITM can be used to fool clients. Some guarantees that come with the use of SSL are:
+Securing communications across a network can be quite difficult but with TLS/SSL (since TLS is now deprecated SSL will be referenced) there is a strong go-to implementation that has been utilized by millions, however, SSL is not perfect and should not be the only solution to creating security on your network as SSL MITM can be used to fool clients. Some guarantees that come with the use of SSL are (image provided by Ram Venugopalan and Geoffrey Cooper of McAfee Security):
 
 <img src="SSL.png" alt="" class="inline"/>
+
+While SSL provides a good stock option for network security it does have its vulnerabilities with one of the most famous cases coming to the surface in April 2014 known as the 'Heartbleed' vulnerability. 
+
+
+
+
+
 
