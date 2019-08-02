@@ -1,4 +1,4 @@
-## Defense Against the Dark Arts
+## Week 6 Write-Up
 Week six was about network security and the numerous security implementations a long with networks. The week's contents were provided by  
 Ram Venugopalan and Geoffrey Cooper of McAfee Security. Content for the week consisted of analyzing the Robustness Principle by Johnathan Postel which would heavily influence the development of networks including the Internet, network-based protection strategies/implementations, and network security topics related to network attacks as well as network information gathering. 
 
