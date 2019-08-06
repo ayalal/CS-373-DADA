@@ -22,3 +22,8 @@ I then made a POST request following the format suggested by the cipher text and
 With the newly provided cipher text from the API used by 'hack the box' I returned to the decoder and decoded the cipher text from the API which in return gave me the generated invite code for the website. 
 
 <img src="inviteCode.png" alt="failed" class="inline"/>
+
+After entering my code I was able to register an account with 'Hack the Box' and continued to the challenges!
+
+## First Challenge Topic-Reverse Name-Snake
+Since I had no idea where to start I chose the first file which dealt with reversing challenges. I then chose the easiest listed challenge available so that I could get a feel for what the challenges in 'Hack the Box' would be like. 
