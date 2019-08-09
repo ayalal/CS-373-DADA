@@ -71,5 +71,26 @@ Same origin policy is a core security feature in browsers that maps domains/IP's
 Cross-site scripting is a security vulnerability typically found in web applications. XSS enables attackers to inject client-side scripts into web pages viewed by other users. A cross-site scripting vulnerability may be used by attackers to bypass access controls such as the same-origin policy. The non-persistent (or reflected) cross-site scripting vulnerability is by far the most basic type of web vulnerability. These holes show up when the data provided by a web client, most commonly in HTTP query parameters (e.g. HTML form submission), is used immediately by server-side scripts to parse and display a page of results for and to that user, without properly sanitizing the content. The persistent (or stored) XSS vulnerability is a more devastating variant of a cross-site scripting flaw: it occurs when the data provided by the attacker is saved by the server, and then permanently displayed on "normal" pages returned to other users in the course of regular browsing, without proper HTML escaping.
 
 
+### Web-Malware Toolbox
+In order to fight back the growing danger of web malware security researches have developed a number of tools/providers for analysis and prevention to attempt to learn new strategies as well as help protect the end users of the web. Some common tools/providers consist of:
 
+- Alexa: provides web traffic data, global rankings, and other information on 30 million websites.As of 2018, its website is visited by over 3 million people every month for URL review.
+
+- Archive.org: Internet archive that can be used to view/analyze site changes over time to determine the authenticity. 
+
+- IPVOID: web application that checks an IP against a large list of IP blacklists. 
+
+- CHECKSHORTURL: URL expander service for short URL services in order to determine original URL.
+
+- SiteDossier: provides basic site information such as IP, parent domain, DNS servers, and inbound links. 
+
+- Webutation: URL reputation clearinghouse that uses real-time user feedback/experience.
+
+- Web Inspector: online web scanning tool that also provides a list of recent malicious sites. 
+
+- Virus Total: online web scanning tool that analyzes URL's and hosted files. 
+
+- Linux JWHOIS: Domain registration data client that can provide registrar, registration date, expiration date, and contact name of a given domain
+
+- Linux Dig: DNS resolver utility which can provide SOA, 'A' records, MX records, CNAME records, NS records, AAAA records, and TXT records.
 
