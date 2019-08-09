@@ -61,6 +61,7 @@ Clickjacking consists of attempting to trick the user in clicking a pre-determin
 
 <img src="Clickjacking.png" alt="" class="inline"/>
 
-
+#### SQL Injection
+SQL injection is a code injection technique, used to attack data-driven applications, in which malicious SQL statements are inserted into an entry field for execution (e.g. to dump the database contents to the attacker). SQL injection exploit a security vulnerability in an application's software, for example, when user input is either incorrectly filtered for string literal escape characters embedded in SQL statements or user input is not strongly typed and unexpectedly executed. SQL injection is mostly known as an attack vector for websites but can be used to attack any type of SQL database. SQL injections are also not just limited to data as there are a number of SQL statements that can be used to access a systems files, query remote database connections, and even execute shell commands. 
 
 
