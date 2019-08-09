@@ -94,3 +94,21 @@ In order to fight back the growing danger of web malware security researches hav
 
 - Linux Dig: DNS resolver utility which can provide SOA, 'A' records, MX records, CNAME records, NS records, AAAA records, and TXT records.
 
+
+### Web-Malware Research Tools
+Much like tools provided in order to protect the user a number of research tools have been developed to help understand the tactics and behavior of malware throughout the web. Research tools for web security consist of:
+
+- PhantomJS: Headless browser used for script interaction and automated page interaction that allows for user defined callbacks.
+
+- Burp Suite: graphical tool for testing web application security with features such as intercept/modify traffic, log resource requests, and spidering. 
+
+- Web Scarab: web security application testing tool. It serves as a proxy that intercepts and allows people to alter web browser web requests and web server replies. 
+
+- JSUnpack: open source command-line utility or service that detects exploits which target browsers and browser plug-in vulnerabilities.
+
+- Firebug: open-source web browser extension for Mozilla Firefox that facilitated the live debugging, editing, and monitoring of any website's CSS, HTML, DOM, XHR, and JavaScript.
+
+### URL Classification
+URL classification identifies a URL to be either malicious or benign (safe) based on different learning methods using various features like on Lexical, host-based, link popularity, DNS, DNS fluxiness, Web page Content, Network and some special feature. The main purpose of classification is to identify maliciou content before being served on a large scale 
+
+
