@@ -37,7 +37,29 @@ Fake updates and AV's is as straightforward as it seems. They prey on the users 
 While social media has been huge in connecting people across the world they have also given attackers another mean to prey on victims across the world. Attackers can utilize social media by creating fake accounts to interact with desired targets in order to develop a relationship which as a result could provide them information that would otherwise not be disclosed. Social media sites also allow for the sharing of hyperlinks or URL which can be used to lure users of the social media site to a malicious location or to a site that will redirect to a malicious source. Users can protect themselves by being wary of what is being presented to them and only allow those you know into your social media presence.
 
 #### Malvertising 
-Malvertising occurs when an attacker uses advertising networks as a mechanism for delivering malware. 
+Malvertising occurs when an attacker uses advertising networks as a mechanism for delivering malware and is very beneficial to attackers as it does not requiring the acquisition of resources or hosting of resources limiting the cost input for the attacker. Another massive benefit for attackers is that through this style is that the users will trust the content on a authentic site which releives the attacker from attempting to establish a relationship with their targets. A simple diagram of how malvertising works at a high level can be seen below (image provided by Cedric Cochin): 
+
+<img src="Malvertising.png" alt="" class="inline"/>
+
+#### Common Defenses
+Since so many tactics have been developed to harm the user in the web domain there are some common defensive procedures that have been produced to help mitigate harmful situations. Common defenses established are URL/domain reputations systems for real-time protection in the browser, site certification services, client/gateway AV, safe URL shorteners, content provider education, and end user education. Education is one of the largest areas that should be pushed by companies as many technologies can be developed to help protect end users however if the end user is not aware of the dangers out their then they can still be susceptible to them. Plus with modern technology providing education on a large scale has become much more efficient allowing for the opportunity in education of malware. 
+
+### Browser-Level Attacks
+Browser-level attacks consist of an attacker using a browser or browser script engine exploit to present/inject malware into a user system. Browser-level attacks can also occur through third party implementations and plug-ins such as java software, Adobe Flash, and so on. Due to development of browser technology a number of security features can be seen in modern browsers such as content security policy enforcement, URL scheme access rules, Operating System isolation/sandboxing, redirection restrictions, content handling/sniffing, disruptive script handling, built-in evalutation clients, and so on. Browser exploitations occur when a browser downloads, renders, and executes a malicious web file that takes advantage of a known weakness in a given browser type. Most exploitations occur by user initiation or sometimes can happen through drive-by downloads which themselves usually occur from user action. Many users ask why security experts can't simply block the content being provided that is malicious and the hard aspect of this area is that Javascript itself can provide a solution in thousands of different ways. Attackers also use various obfuscation techniques such as renaming script variables to meaningless text, removing white space to create an unreadable script, self-generating code, heavy use case statements, and encryption methods. 
+
+#### Man-in-the-Middle Attack (MITM)
+Exactly the same style as discussed in the previous write-ups however the approach taken here utilizes a browser weakness to gain access to network traffic between two endpoints which can then be taken advantage of. Gaining this advantage throught the browser will still allow the attacker to provide mid-traffic assertion (via the network) through tactics such as DNS poisoning, ARP poisoning, or rogue router/proxy. 
+
+#### Man-in-the-Browser Attack (MITB) 
+Noted as the dangerous cousin to Man-in-the-Middle attacks, MITB attacks still manipulate traffic between end points but through the browser itself which can allow the attacker to change number mid-stream, sniff passwords, or even port-scan a user's network. Common methods for MITB attacks consist of payloads taking advantage of browser exploits, plug-in exploits, and new HTML5 features such as web workers/sockets. 
+
+#### DNS Spoofing
+DNS spoofing, otherwise known as DNS cache poisoning, consists of storing malicious IP's on a DNS server so that when a browser asks for an authentic IP/domain the server will return the malicious IP/domain since it has been poisoned with the malicious content. Browsers then usually fetch the content from the provided malicious IP using the correct host in HTTP header.
+
+#### Clickjacking (UI Redressing) 
+Clickjacking consists of attempting to trick the user in clicking a pre-determined link with a rendered HTML page which will lead to a malicious site or provide maliciou content. Much of the content in the HTML page is usually frames and layers (good at hiding the maliciou intent) which are utilized to confuse the user on sites that are completely legitimate/authentic. An example of clickjacking can be seen below: 
+
+<img src="Clickjacking.png" alt="" class="inline"/>
 
 
 
