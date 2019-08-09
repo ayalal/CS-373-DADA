@@ -34,5 +34,11 @@ SEO poisoning (search poisoning) is another common web attack that integrates ma
 Fake updates and AV's is as straightforward as it seems. They prey on the users intention of keeping an up-to-date or secure system by implementing pop-ups that closely or entirely mimic common pop-ups that are related to either common operating system pop-ups or anti-virus pop-ups. Fake ads as previously stated mimic the behavior of common pop-ups but on a separate abstract layer but from a UI perspective it can be difficult or impossible to distinguish. 
 
 #### Social Media Attacks
-While social media has been huge in connecting people across the world they have also given attackers another mean to prey on victims across the world. Attackers can utilize social media by creating fake accounts to interact with desired targets in order to develop a relationship which as a result could provide them information that would otherwise not be disclosed. 
+While social media has been huge in connecting people across the world they have also given attackers another mean to prey on victims across the world. Attackers can utilize social media by creating fake accounts to interact with desired targets in order to develop a relationship which as a result could provide them information that would otherwise not be disclosed. Social media sites also allow for the sharing of hyperlinks or URL which can be used to lure users of the social media site to a malicious location or to a site that will redirect to a malicious source. Users can protect themselves by being wary of what is being presented to them and only allow those you know into your social media presence.
+
+#### Malvertising 
+Malvertising occurs when an attacker uses advertising networks as a mechanism for delivering malware. 
+
+
+
 
