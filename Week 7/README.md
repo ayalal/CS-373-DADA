@@ -109,6 +109,10 @@ Much like tools provided in order to protect the user a number of research tools
 - Firebug: open-source web browser extension for Mozilla Firefox that facilitated the live debugging, editing, and monitoring of any website's CSS, HTML, DOM, XHR, and JavaScript.
 
 ### URL Classification
-URL classification identifies a URL to be either malicious or benign (safe) based on different learning methods using various features like on Lexical, host-based, link popularity, DNS, DNS fluxiness, Web page Content, Network and some special feature. The main purpose of classification is to identify maliciou content before being served on a large scale 
+URL classification identifies a URL to be either malicious or benign (safe) based on different learning methods using various features like on Lexical, host-based, link popularity, DNS, DNS fluxiness, Web page Content, Network and some special feature. The main purpose of classification is to identify malicious content before being served on a large scale and in manner that is more consistent that other methods of identifying malware. 
+
+### Conclusion
+Overall week 7 provided a brief yet strong overview of web security as a whole. Week 7 also served as a catalyst in a sense that while so many tools and features can be developed to protect end users, it is the users education on web malware that can utlimately decide just how safe a browsing experience can be. 
+
 
 
