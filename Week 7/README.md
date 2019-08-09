@@ -57,11 +57,19 @@ Noted as the dangerous cousin to Man-in-the-Middle attacks, MITB attacks still m
 DNS spoofing, otherwise known as DNS cache poisoning, consists of storing malicious IP's on a DNS server so that when a browser asks for an authentic IP/domain the server will return the malicious IP/domain since it has been poisoned with the malicious content. Browsers then usually fetch the content from the provided malicious IP using the correct host in HTTP header.
 
 #### Clickjacking (UI Redressing) 
-Clickjacking consists of attempting to trick the user in clicking a pre-determined link with a rendered HTML page which will lead to a malicious site or provide maliciou content. Much of the content in the HTML page is usually frames and layers (good at hiding the maliciou intent) which are utilized to confuse the user on sites that are completely legitimate/authentic. An example of clickjacking can be seen below: 
+Clickjacking consists of attempting to trick the user in clicking a pre-determined link with a rendered HTML page which will lead to a malicious site or provide maliciou content. Much of the content in the HTML page is usually frames and layers (good at hiding the maliciou intent) which are utilized to confuse the user on sites that are completely legitimate/authentic. An example of clickjacking can be seen below (image provided by Cedric Cochin): 
 
 <img src="Clickjacking.png" alt="" class="inline"/>
 
 #### SQL Injection
 SQL injection is a code injection technique, used to attack data-driven applications, in which malicious SQL statements are inserted into an entry field for execution (e.g. to dump the database contents to the attacker). SQL injection exploit a security vulnerability in an application's software, for example, when user input is either incorrectly filtered for string literal escape characters embedded in SQL statements or user input is not strongly typed and unexpectedly executed. SQL injection is mostly known as an attack vector for websites but can be used to attack any type of SQL database. SQL injections are also not just limited to data as there are a number of SQL statements that can be used to access a systems files, query remote database connections, and even execute shell commands. 
+
+#### Same Origin Policy Attack
+Same origin policy is a core security feature in browsers that maps domains/IP's to the same origin based on scheme, host, and port of a URL. Same origin policy in essence controls DOM access between scripts running in the browser, XML requests, cookie access, and plug-in access. Removing same origin policy can occur should the attacker gain access via the client-side which can allow the attacker to remove the filters present in same origin policy so that they can redirect the user to a malicious source. 
+
+#### Cross-Site Scripting (XSS)
+Cross-site scripting is a security vulnerability typically found in web applications. XSS enables attackers to inject client-side scripts into web pages viewed by other users. A cross-site scripting vulnerability may be used by attackers to bypass access controls such as the same-origin policy. The non-persistent (or reflected) cross-site scripting vulnerability is by far the most basic type of web vulnerability. These holes show up when the data provided by a web client, most commonly in HTTP query parameters (e.g. HTML form submission), is used immediately by server-side scripts to parse and display a page of results for and to that user, without properly sanitizing the content. The persistent (or stored) XSS vulnerability is a more devastating variant of a cross-site scripting flaw: it occurs when the data provided by the attacker is saved by the server, and then permanently displayed on "normal" pages returned to other users in the course of regular browsing, without proper HTML escaping.
+
+
 
 
