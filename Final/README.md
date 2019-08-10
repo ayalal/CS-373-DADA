@@ -25,5 +25,14 @@ With the newly provided cipher text from the API used by 'hack the box' I return
 
 After entering my code I was able to register an account with 'Hack the Box' and continued to the challenges!
 
-## First Challenge Topic-Reverse Name-Snake
-Since I had no idea where to start I chose the first file which dealt with reversing challenges. I then chose the easiest listed challenge available so that I could get a feel for what the challenges in 'Hack the Box' would be like. 
+## First Challenge, Topic= Reverse, Name= Snake
+Since I had no idea where to start I chose the first file which dealt with reversing challenges. I then chose the easiest listed challenge available so that I could get a feel for what the challenges in 'Hack the Box' would be like. Looking at the provided files I ran the python script in visual studio 2019 to see how the application ran. On run a prompt showed up as seen here:
+
+<img src="SnakePrompt.png" alt="failed" class="inline"/>
+
+
+
+
+
+
+
