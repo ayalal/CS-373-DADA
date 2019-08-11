@@ -35,9 +35,19 @@ I then looked at the source code and saw that the inputs were being compared to 
 <img src="SnakeSource.png" alt="failed" class="inline"/>
 <img src="SnakePromptComplete.png" alt="failed" class="inline"/>
 
-Low and behold it worked! with the username and password printed I was able to complete the challenge since I need the usernamen and the first ten characters of the password to pass the flag input for the challenge. Taking in the known parameters I passed in the flag with corresponding syntax and passed the challenge.
+Low and behold it worked! with the username and password printed I was able to complete the challenge since I need the usernamen and the first ten characters of the password to pass the flag input for the challenge. Taking in the known parameters I passed in the flag with corresponding syntax and passed the challenge. Overall this challenge was very easy but was a good intro as to the difficulty rating in hack the box. 
 
 <img src="SnakeComplete.png" alt="failed" class="inline"/>
+
+## Second Challenge, Topic= Web, Name= Emdee five for life (20 pts)
+For my second challenge I moved over to the Web category and came across the 'Emdee five for life' challenge which has the user start out by running a docker instance in order to run the application. On spinning up the instance and connecting to the URL plus port number via HTTP you are presented with the web application presenting a mixture of characters and stating to submit the md5 hash of those said characters. 
+
+<img src="Emdee.png" alt="failed" class="inline"/>
+
+I did as follows but had the feeling that it would not work since being a challenge it could not be that simple and on point with my instinct the site presented me with a warning stating I was to slow to respond (seen in the image above). Fromt that prompt I decided to make a little python script that would connect to the docker session, read the presented characters, hash them with md5, and submit the hashed characters within a small time span so that I would pass the challenge. In my script I connect to the docker instance URL with port number read the header containing the characters then encode with utf-8 so that I can then hash with md5 to get the required submission. On running the script I was then presented with the successful response!
+
+<img src="EmdeeCode.png" alt="failed" class="inline"/>
+<img src="EmdeeComplete.png" alt="failed" class="inline"/>
 
 
 
