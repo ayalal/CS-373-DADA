@@ -61,6 +61,8 @@ Starting out with the 'Find The Easy Pass' I downloaded the provided folder and 
 
 Seeing that the file provided is an executable I opened up Immunity Debugger which I had installed on my system from debugging assembly in former courses I have taken such as Operating Systems 2 and an advanced assembly course. I then opened up the application within the debugger to analyze what was being done with the input and if it was being compared to a predetermined password. 
 
+Immunity Debugger: A debugger with functionality designed specifically for the security industry which includes usability features such as writing exploits, analyze malware, and reverse engineer binary files. Immunity debugger also includes the mixture of a GUI and CLI within one package a long with Python integration to automate debugging needs and scenarios. 
+
 <img src="EasyPassImmunity.png" alt="failed" class="inline"/>
 
 After looking further into the assembly I noticed while scrolling up that there were two strings that would be printed out after a call to a certain subroutine within the solution. The largest hint was when the EAX and EDX registers (EAX and EDX are commonly used for logic work) were being filled with information before a call to a subroutine which on return would result in the printing of either text based on the scenario. Realizing this I set a breakpoint at the call to see what values were present in the registers. 
@@ -68,3 +70,9 @@ After looking further into the assembly I noticed while scrolling up that there 
 <img src="EasyPassSubroutine.png" alt="failed" class="inline"/>
 
 Looking at the registers in their respective window (top right window in Immunity Debugger) I realized that the password I provided 'pass' was present in the EAX register while the EDX register was used to hold the set password for the application by which would be used for comparisons. within the EDX register was the string 'fortran!' which I then submitted into the application which resulted in the successful response we were looking for.  
+
+<img src="EasyPassSuccess.png" alt="failed" class="inline"/>
+
+Following the success with the program I then went back to 'Hack the Box' website to input the necessary flag input in order to fully complete the challenge...success!! Overall this challenge ended up being very straighforward but I really enjoyed the debugging aspect that could be used in order to break down the assembly for this challenges solution. 
+
+<img src="EasyPassComplete.png" alt="failed" class="inline"/>
