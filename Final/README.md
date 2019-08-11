@@ -49,5 +49,7 @@ I did as follows but had the feeling that it would not work since being a challe
 <img src="EmdeeCode.png" alt="failed" class="inline"/>
 <img src="EmdeeComplete.png" alt="failed" class="inline"/>
 
+Following the success with the script I then submitted the response text which is the required flag response for the challenge  which as a result fully completed the 'Emdee five for life' challenge. Overall this challenge was pretty straightforward for me and having experience with web/mobile application and python I had a quick thought solution which ended up working very well for this challenge.
 
+<img src="EmdeeChallengeComplete.png" alt="failed" class="inline"/>
 
